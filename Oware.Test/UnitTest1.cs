@@ -12,7 +12,13 @@ namespace Oware.Test
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            //Arrange
+            House h = new House(0, 0);
+            //Act:
+            h.ResetHouse();
+            //Assert
+            Assert.AreEqual(4,h.GetCount(),"Reseting house, sets all houses back all to 4 seeds each");
         }
+        
     }
 }
