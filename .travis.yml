@@ -3,5 +3,6 @@ mono: none
 dotnet: 5.0
 solution: Oware.sln
 script:
-  -dotnet test
+  - dotnet restore
+  - dotnet test
 ...
